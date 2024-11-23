@@ -1,0 +1,78 @@
+:root {
+    --headFont:  Fibre_Vintage;
+    --mainFont: Poppins-Regular;
+    --subColor: #D62828
+}
+
+* {
+    padding: 0;;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mainFont, Poppins-Regular );
+}
+
+@font-face {
+    font-family: Fibre_Vintage ;
+    src: url(../assets/fonts/fibre-font.otf);
+}
+@font-face {
+    font-family: Poppins-Regular ;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-Medium ;
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Poppins-SemiBold ;
+    src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2.3em;
+}
+h3 {
+    font-size: 2.1em;
+}
+h4 {
+    font-size: 1.9em;
+}
+h5 {
+    font-size: 1.7em;
+}
+h6 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+body {
+    background-image: url(../assets/images/BackGround.png);
+    overflow-x: hidden;
+    
+}
+
+.inlineMrg {
+    margin-inline: 1.5em;
+}
+
+.heading_font {
+    font-family: var(--headFont, Poppins-Regular);
+}
+
+button {
+    cursor: pointer;
+}

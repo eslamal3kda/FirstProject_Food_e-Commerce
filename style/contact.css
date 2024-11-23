@@ -1,0 +1,136 @@
+
+
+            /* home-contact style  */
+
+
+.home_contact {
+    height: 50vh;
+    margin-block: 2em;
+    background: linear-gradient(to right , rgb(0,0,0,0.8),rgb(0,0,0,0.8)), url(../assets/images/meat.jpeg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.home_contact p , span {
+    font-size: 1.8em;
+    color: #ffffff80;
+}
+
+.home_contact p.active , span{
+    color: #fff;
+}
+
+
+            /* section_contact form style */
+
+
+.contact_form_section {
+    margin-block: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.contact_form_section .contact_form_heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact_form_heading p {
+    font-size: 0.8em;
+}
+
+.contact_form_heading h2 {
+    font-family: Fibre_Vintage ;
+}
+
+.contact_form_section form {
+    width: 70em;
+    background-color: #1D1D1D;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1.5em;
+}
+
+.contact_form_section form .form_head {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact_form_section form .form_head div {
+    position: relative;
+    width: calc((100% - 2em) / 3);
+
+}
+
+.contact_form_section form .form_head i {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translate(0, -50%);
+    font-size: 1.2em;
+    color: var(--subColor , #D62828);
+}
+
+.contact_form_section form .form_head input {
+    padding: 1.5em;
+    width: 100%;
+    border-radius: 1em;
+    background-color: transparent;
+    border: none;
+    outline: 0.2em solid #fff;
+    color: #fff;
+}
+
+.contact_form_section form .text_area {
+    width: 100%;
+    position: relative;
+    height: 15em;
+}
+
+.contact_form_section form .text_area i {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 1.2em;
+    color: var(--subColor , #D62828);
+}
+
+
+.contact_form_section form .text_area textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    outline: 0.2em solid #fff;
+    color: #fff;
+}
+
+.contact_form_section form .button_form {
+    width:100%;
+
+}
+
+.contact_form_section form .button_form button {
+    width: 15em;
+    padding: 1.3em;
+    border-radius: 1em;
+    background-color: transparent;
+    color: #fff;
+    outline: 0.2em solid #fff;
+    border: none;
+}

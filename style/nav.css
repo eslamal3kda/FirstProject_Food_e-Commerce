@@ -1,0 +1,163 @@
+:root {
+    --headFont:  Fibre_Vintage;
+    --mainFont: Poppins-Regular;
+    --subColor: #D62828
+}
+
+* {
+    padding: 0;;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mainFont, Poppins-Regular );
+}
+
+@font-face {
+    font-family: Fibre_Vintage ;
+    src: url(../assets/fonts/fibre-font.otf);
+}
+@font-face {
+    font-family: Poppins-Regular ;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-Medium ;
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Poppins-SemiBold ;
+    src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.inlineMrg {
+    margin-inline: 1.5em;
+}
+
+
+/* start styling  */
+
+
+nav {
+    margin-top: 2em;
+    padding-block: 0.5em;
+    padding-inline: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 3em);
+}
+
+nav .logo {
+    width: 5em;
+    height: 5em;
+    cursor: pointer;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+nav ul {
+    font-size: 1.2em;
+    display: flex;
+    gap: 1.5em;
+    text-transform: uppercase;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+nav ul a {
+    color: rgb(255, 255, 255,0.5);
+}
+
+nav ul li {
+    cursor: pointer;
+}
+nav ul a.active {
+    color: #fff;
+    
+}
+
+.icons {
+    display: flex;
+    gap: 1em;
+}
+
+.icons .notify, .icons .cart {
+    height: 3em;
+    width: 3em;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.icons .counter {
+    color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--subColor,red);
+}
+
+.icons div i {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+nav .menu-icon {
+    color: #fff;
+    font-size: 1.8em;
+    cursor: pointer;
+    display: none;
+}
+
+.display_menu{
+    display: flex !important; 
+    width: 100%;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1D1D1D;
+    z-index: 10;
+}
+
+
+
+@media(max-width:950px){
+    nav ul {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: flex;
+    }
+
+    nav ul a {
+        color: #fff;
+    }
+}
