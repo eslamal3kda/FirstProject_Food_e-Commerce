@@ -3,6 +3,15 @@ const BASE_URL = "http://localhost:3000";
 const cartProducts = document.querySelector('.selling_cards .swiper-wrapper')
 
 
+
+const btn = document.querySelector('.home button');
+
+btn.addEventListener('click', ()=>{
+    location.href = 'shop.html'
+})
+
+
+
 async function getAllProducts() {
     const res = await fetch(`${BASE_URL}/products`);
     const finalRes = await res.json()
@@ -73,6 +82,7 @@ function initializeSwiper() {
             delay:2000
         },
         breakpoints: {
+            320: { slidesPerView:1, spaceBetween:10},
             640: { slidesPerView: 1, spaceBetween: 10 },
             768: { slidesPerView: 2, spaceBetween: 20 },
             1024: { slidesPerView: 3, spaceBetween: 30 },

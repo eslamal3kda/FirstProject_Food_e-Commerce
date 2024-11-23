@@ -147,10 +147,22 @@ nav .menu-icon {
 }
 
 
+#x {
+    color: #fff;
+    font-size: 1.2em;
+    position: absolute;
+    top: 1.2em;
+    right: 1.2em;
+    cursor: pointer;
+    display: none;
+}
+
+
 
 @media(max-width:950px){
     nav ul {
         display: none;
+        position: relative;
     }
 
     nav .menu-icon {
@@ -160,4 +172,15 @@ nav .menu-icon {
     nav ul a {
         color: #fff;
     }
+
+    #x {
+        display: flex;
+    }
 }
+
+@media(max-width:780px){
+    .icons {
+        display: none;
+    }
+}
+

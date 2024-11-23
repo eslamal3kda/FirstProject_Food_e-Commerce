@@ -5,12 +5,12 @@ nav.innerHTML = `
         <div class="logo">
             <img src="./assets/images/Logo.png" alt="">
         </div>
-
         <ul>
             <li><a href="index.html" class="active">home</a></li>
             <li><a href="">about</a></li>
             <li><a href="shop.html">shop</a></li>
             <li><a href="contact.html">contact</a></li>
+            <i id="x" class="fas fa-xmark"></i>
         </ul>
         <div class="menu">
             <i class="fas fa-bars menu-icon"></i>
@@ -28,6 +28,12 @@ nav.innerHTML = `
 `
 document.body.prepend(nav);
 
+const logo = document.querySelector('nav .logo');
+
+logo.addEventListener('click' ,()=> {
+    location.href = 'index.html'
+})
+
 const cartIcon = document.querySelector('nav .cart');
 
 cartIcon.addEventListener('click', ()=> {
@@ -44,12 +50,18 @@ notifyIcon.addEventListener('click',()=>{
 const menuUl =document.querySelector('nav ul');
 const menuIcon = document.querySelector('nav .menu-icon')
 
-console.log(menuIcon);
 
 
 menuIcon.addEventListener('click', () => {
     menuUl.classList.add('display_menu')
     });
+
+const X = document.getElementById('x')
+
+X.addEventListener('click', ()=> {
+    menuUl.classList.remove('display_menu')
+})
+
     
 
 const links = document.querySelectorAll('nav ul li a')
@@ -63,3 +75,5 @@ const links = document.querySelectorAll('nav ul li a')
         })
     })
     
+
+

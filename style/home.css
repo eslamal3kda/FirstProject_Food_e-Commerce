@@ -35,6 +35,7 @@
 }
 .home .content h1 {
     font-size: 4em;
+    padding-top: 1em;
 }
 
 .home .content button {
@@ -308,7 +309,6 @@
 
 
 
-
 .swiper {
     width: 100%;
     padding: 1em 0;
@@ -331,4 +331,28 @@
     width: 5em;
     height: 0.5em;
     border-radius: 1em;
+}
+
+
+
+@media(max-width:900px){
+    .home .content {
+        gap: 2.5em;
+    }
+
+    .home .content h1 {
+        font-size: 2.5em;
+        width: 70%;
+    }
+
+    .home .content p  {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .home .content button {
+        width: 13em;
+        font-size: 1em;
+        border-radius: 1.2em;
+    }
 }

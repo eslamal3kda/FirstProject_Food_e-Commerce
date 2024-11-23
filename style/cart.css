@@ -1,0 +1,47 @@
+.home_cart {
+    height: 50vh;
+    margin-block: 2em;
+    background: linear-gradient(to right , rgb(0,0,0,0.8),rgb(0,0,0,0.8)), url(../assets/images/meat.jpeg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.home_cart p , span {
+    font-size: 1.8em;
+    color: #ffffff80;
+}
+.home_cart p.active , span{
+    color: #fff;
+}
+
+.empty {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    color: #fff;
+}
+
+.empty h2 {
+    font-family: var(--headFont, Poppins-Regular);
+    font-size: 3em;
+}
+
+.empty button {
+    width: 15em;
+    padding: 0.8em;
+    background-color: var(--subColor);
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 1.5em;
+    border: 4px solid #ed6363;
+    cursor: pointer;
+    text-transform: uppercase;
+}
