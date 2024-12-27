@@ -1,6 +1,6 @@
 //npm run db
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://food-e-commerce-api.vercel.app";
 
 const categories_items = document.querySelector('.categories_items');
 const categories_cards = document.querySelector('.categories_cards')
