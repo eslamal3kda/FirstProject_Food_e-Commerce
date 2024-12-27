@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://food-e-commerce-api.vercel.app/";
 
 const cartProducts = document.querySelector('.selling_cards .swiper-wrapper')
 
